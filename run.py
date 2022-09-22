@@ -14,7 +14,7 @@ game_board = [
 
 
 # displaying the game board to the console
-def show_board():
+def showBoard():
     """
     Lays out the grid and 0 index system 
     """
@@ -26,7 +26,22 @@ def show_board():
 
 
 # takes the players input
+def userInput(game_board):
+    """
+    Asks the user to enter an integer from 1-9, and ensuring that the space
+    hasn't been taken already.
+    ValueErrors raised if anything other than an integer from 1-9 is enetered.
+    """
+    integer_input = int(input("Please enter a number from 1-9: "))
+    if integer_input >= 1 and integer_input <= 9 and game_board[integer_input-1] == "?":
+        game_board[integer_input-1] = currentUser
+    else:
+        print("Sorry that spot is already taken")
+        
+  
 
 
 
-show_board()
+
+showBoard()
+userInput(game_board)
