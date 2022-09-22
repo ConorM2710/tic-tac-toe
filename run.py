@@ -30,7 +30,6 @@ def userInput(game_board):
     """
     Asks the user to enter an integer from 1-9, and ensuring that the space
     hasn't been taken already.
-    ValueErrors raised if anything other than an integer from 1-9 is enetered.
     """
     integer_input = int(input("Please enter a number from 1-9: "))
     if integer_input >= 1 and integer_input <= 9 and game_board[integer_input-1] == "?":
@@ -41,7 +40,7 @@ def userInput(game_board):
   
 
 
+while gameRunning:
+    showBoard()
+    userInput(game_board)
 
-
-showBoard()
-userInput(game_board)
