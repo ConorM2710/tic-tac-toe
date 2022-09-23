@@ -1,6 +1,5 @@
 
-
-# variables and constants
+# Global variables
 board = [
     "?", "?", "?",
     "?", "?", "?",
@@ -18,9 +17,9 @@ def show_board(board):
     Lays out the grid and 0 index system .strip()
     """
     print(board[0] + " | " + board[1] + " | " + board[2])
-    print("--+---+--")
+    print("--|---|--")
     print(board[3] + " | " + board[4] + " | " + board[5])
-    print("--+---+--")
+    print("--|---|--")
     print(board[6] + " | " + board[7] + " | " + board[8])
 
 # takes the players input
@@ -36,6 +35,8 @@ def user_input(board):
         board[int_input-1] = CURRENTUSER
     else:
         print("Something went wrong, please enter a valid integer from 1-9")
+
+# checking for the winner
 
 
 while GAMERUNNING:
