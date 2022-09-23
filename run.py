@@ -1,46 +1,43 @@
-#-----Global Variables-----
-currentUser = "X"
-winner = None
-gameRunning = True
 
 
-# Layout of the 3 x 3 game board
-game_board = [
+# variables and constants
+board = [
     "?", "?", "?",
     "?", "?", "?",
     "?", "?", "?"
 ]
-
-
+CURRENTUSER = "X"
+WINNER = None
+GAMERUNNING = True
 
 # displaying the game board to the console
-def showBoard():
-    """
-    Lays out the grid and 0 index system 
-    """
-    print(game_board[0] + " | " + game_board[1] + " | " + game_board[2])
-    print("--+---+--")
-    print(game_board[3] + " | " + game_board[4] + " | " + game_board[5])
-    print("--+---+--")
-    print(game_board[6] + " | " + game_board[7] + " | " + game_board[8])
 
+
+def show_board(board):
+    """
+    Lays out the grid and 0 index system .strip()
+    """
+    print(board[0] + " | " + board[1] + " | " + board[2])
+    print("--+---+--")
+    print(board[3] + " | " + board[4] + " | " + board[5])
+    print("--+---+--")
+    print(board[6] + " | " + board[7] + " | " + board[8])
 
 # takes the players input
-def userInput(game_board):
+
+
+def user_input(board):
     """
     Asks the user to enter an integer from 1-9, and ensuring that the space
     hasn't been taken already.
     """
-    integer_input = int(input("Please enter a number from 1-9: "))
-    if integer_input >= 1 and integer_input <= 9 and game_board[integer_input-1] == "?":
-        game_board[integer_input-1] = currentUser
+    int_input = int(input("Please enter a number from 1-9: "))
+    if int_input >= 1 and int_input <= 9 and board[int_input-1] == "?":
+        board[int_input-1] = CURRENTUSER
     else:
-        print("Sorry that spot is already taken")
-        
-  
+        print("Something went wrong, please enter a valid integer from 1-9")
 
 
-while gameRunning:
-    showBoard()
-    userInput(game_board)
-
+while GAMERUNNING:
+    show_board(board)
+    user_input(board)
