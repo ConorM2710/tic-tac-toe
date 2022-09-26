@@ -90,8 +90,22 @@ def check_diagonal(board):
     elif board[2] == board[4] == board[6] and board[2] != "?":
         WINNER = board[2]
         return True
-        
-              
+
+# Draw
+
+
+def check_draw(board):
+    """
+    Checking for a tie in the game by checking if all 9 spaces
+    have been filled and there is no more moves to make
+    """
+    global GAMERUNNING
+    if "?" not in board:
+        show_board(board)
+        print("Uh Oh there is no more space letf, It's a tie!\n")
+        GAMERUNNING = False
+
+
 while GAMERUNNING:
     show_board(board)
     user_input(board)
