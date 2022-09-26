@@ -119,6 +119,21 @@ def check_winner():
         GAMERUNNING = False
 
 
+# Change player
+
+
+def change_user():
+    """
+    Changing the input between X and O for when it becomes 
+    the computers turn
+    """
+    global CURRENTUSER
+    if CURRENTUSER == "X":
+        CURRENTUSER = "O"
+    else:
+        CURRENTUSER = "X"
+
+
 while GAMERUNNING:
     show_board(board)
     user_input(board)
