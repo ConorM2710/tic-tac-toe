@@ -74,10 +74,24 @@ def check_columns(board):
     elif board[2] == board[5] == board[8] and board[2] != "?":
         WINNER = board[2]
         return True
-    
 
 
+# Diagonal
 
+
+def check_diagonal(board):
+    """
+    Checking the diagonals to see if there has been a win
+    """
+    global WINNER
+    if board[0] == board[4] == board[8] and board[0] != "?":
+        WINNER = board[0]
+        return True
+    elif board[2] == board[4] == board[6] and board[2] != "?":
+        WINNER = board[2]
+        return True
+        
+              
 while GAMERUNNING:
     show_board(board)
     user_input(board)
