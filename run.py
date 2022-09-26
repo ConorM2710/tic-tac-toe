@@ -102,8 +102,20 @@ def check_draw(board):
     global GAMERUNNING
     if "?" not in board:
         show_board(board)
-        print("Uh Oh there is no more space letf, It's a tie!\n")
+        print("Uh Oh there is no more space left, It's a tie!\n")
         GAMERUNNING = False
+
+
+# Winner
+
+
+def check_winner():
+    """
+    Checking all three functions to determine the winner
+    """
+    global GAMERUNNING
+    if check_rows(board) or check_diagonal(board) or check_columns(board):
+        print(f"{WINNER} has won the game!")
 
 
 while GAMERUNNING:
