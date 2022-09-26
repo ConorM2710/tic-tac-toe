@@ -116,6 +116,7 @@ def check_winner():
     global GAMERUNNING
     if check_rows(board) or check_diagonal(board) or check_columns(board):
         print(f"{WINNER} has won the game!")
+        GAMERUNNING = False
 
 
 while GAMERUNNING:
