@@ -135,9 +135,23 @@ def change_user():
         CURRENTUSER = "X"
 
 
+# computers turn
+
+
+def comp_turn(board):
+    while CURRENTUSER == "O":
+        space = random.randint(0, 8)
+        if board[space] == "?":
+            board[space] = "O"
+            change_user()
+
+
 while GAMERUNNING:
     show_board(board)
     user_input(board)
     check_draw(board)
     check_winner()
     change_user()
+    comp_turn(board)
+    check_winner()
+    check_draw(board)
