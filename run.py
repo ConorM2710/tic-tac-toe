@@ -1,3 +1,4 @@
+import random
 
 # Global variables
 board = [
@@ -137,3 +138,6 @@ def change_user():
 while GAMERUNNING:
     show_board(board)
     user_input(board)
+    check_draw(board)
+    check_winner()
+    change_user()
