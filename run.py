@@ -38,6 +38,8 @@ def user_input(board):
         print("Something went wrong, please enter a valid integer from 1-9")
 
 # checking for the winner or a draw, across all three directions
+# linked stackoverflow article in the README, specifically the have_you_won
+# function used in the article, helped me with my checking process
 # Rows
 
 
@@ -139,6 +141,9 @@ def change_user():
 
 
 def comp_turn(board):
+    """
+    Computer's turn to enter a randomized number to fill said spot
+    """ 
     while CURRENTUSER == "O":
         space = random.randint(0, 8)
         if board[space] == "?":
