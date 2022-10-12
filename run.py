@@ -31,7 +31,7 @@ def user_input(board):
     Asks the user to enter an integer from 1-9, and ensuring that the space
     hasn't been taken already.
     """
-    int_input = int(input("Please enter a number from 1-9: "))
+    int_input = int(input("Please enter a number from 1-9:\n "))
     if int_input >= 1 and int_input <= 9 and board[int_input-1] == "?":
         board[int_input-1] = CURRENTUSER
     else:
@@ -39,7 +39,7 @@ def user_input(board):
 
 # checking for the winner or a draw, across all three directions
 # linked stackoverflow article in the README, specifically the have_you_won
-# function used in the article, helped me with my checking process
+# function used in the article, helped me with my checking for process
 # Rows
 
 
