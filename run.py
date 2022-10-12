@@ -10,6 +10,19 @@ CURRENTUSER = "X"
 WINNER = None
 GAMERUNNING = True
 
+
+def show_rules(board):
+    """
+    displays to the user how to play the game
+    """
+    print("Welcome to tic tac toe!!!")
+    print("----------------------")
+    print("You will be playing as X against the computer")
+    print("----------------------")
+    print("first player to score 3 in a row")
+    print("diagonally, horizontally or vertically, wins!")
+    print("----------------------")
+
 # displaying the game board to the console
 
 
@@ -152,6 +165,7 @@ def comp_turn(board):
 
 
 while GAMERUNNING:
+    show_rules(board)
     show_board(board)
     user_input(board)
     check_draw(board)
