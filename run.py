@@ -11,6 +11,8 @@ WINNER = None
 GAMERUNNING = True
 
 
+# displays the rules of the game to the user
+
 def show_rules(board):
     """
     displays to the user how to play the game
@@ -28,7 +30,7 @@ def show_rules(board):
 
 def show_board(board):
     """
-    Lays out the grid and 0 index system .strip()
+    Lays out the grid and 0 index system
     """
     print(board[0] + " | " + board[1] + " | " + board[2])
     print("--|---|--")
@@ -165,7 +167,6 @@ def comp_turn(board):
 
 
 while GAMERUNNING:
-    show_rules(board)
     show_board(board)
     user_input(board)
     check_draw(board)

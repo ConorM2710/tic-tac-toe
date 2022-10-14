@@ -1,31 +1,23 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Tic Tac Toe
 
-Welcome ConorM2710,
+Tic Tac Toe is a python terminal game, which runs in the Code Institute mock terminal on Heroku.
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+The objective of the game is for the user "X" to beat the computer "O", by attempting to score three of 
+their symbols in a row vertically, diagonally or horizontally.
 
-## Reminders
+[Here is a link to the live site]()
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+![image of the game on multiple devices]()
 
-## Creating the Heroku app
+## How to play the game
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+Tic Tac Toe is a game of ancient origins which you can find out more about here on [Wikipedia](https://en.wikipedia.org/wiki/Tic-tac-toe)
 
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
+In this version the user "X" will be playing against the computer "O".
+1. The user "X" goes first and must enter a valid integer from 1 to 9.
+2. The board is a three by three grid with the nine spaces consisting of a `?`.
+3. When the user enters a valid integer the `?` will disappear and be replaced by that players symbol,
+either an `X` or an `O`.
+4. The player and the computer then takes turns to occupy spaces on the grid.
+5. The first player to occupy three spaces such that theyr'e symbol aligns vertically, horizontally or diagonally, wins the game.
+6. In the event of a draw match, the players must reset the board and start again.
