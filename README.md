@@ -7,7 +7,6 @@ their symbols in a row vertically, diagonally or horizontally.
 
 [Here is a link to the live site]()
 
-![image of the game on multiple devices]()
 
 ## How to play the game
 
@@ -19,7 +18,7 @@ In this version the user "X" will be playing against the computer "O".
 3. When the user enters a valid integer the `?` will disappear and be replaced by that players symbol,
 either an `X` or an `O`.
 4. The player and the computer then takes turns to occupy spaces on the grid.
-5. The first player to occupy three spaces such that theyr'e symbol aligns vertically, horizontally or diagonally, wins the game.
+5. The first player to occupy three spaces such that they're symbol aligns vertically, horizontally or diagonally, wins the game.
 6. In the event of a draw match, the players must reset the board and start again.
 
 ## Features
