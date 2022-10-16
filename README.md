@@ -78,4 +78,4 @@ This project was deployed using Code Institute's mock terminal in Heroku.
 
 1. The Code institute deployment terminal
 2. This is the link to the stack overflow article that helped me with the checking process in my project, specifically the `have_you_won` section, [click the link here](https://stackoverflow.com/questions/49160081/the-functions-for-this-python-tic-tac-toe-game-is-not-working)
-3. [Here is another link]() that brings you stackoverlfow in the python game section where I saw common problems people were having
+3. [Here is another link](https://stackoverflow.com/search?q=python+tic+tac+toe&s=3fcb5a27-d899-4520-bf77-d75286442845) that brings you stackoverlfow in the python game section where I saw common problems people were having
