@@ -51,4 +51,31 @@ Whilst typing up this README.md before submission, I unfortunately realised that
 
 * I have given the console invalid data such as the same number twice or a numbe that is too large
 * I have tested that the game works as expected on the Code Institute heroku terminal and on my local terminal
-* I have been trying to source a valid python online validator as the link to the validator we have been given brings you to a goDaddy domain [Here is the link that should bring me to the PEP8 validator](http://pep8online.com/)
+* I have been trying to source a valid python online validator as the link to the offical PEP8 validator we have been given brings you to a goDaddy domain [Here is the link that should bring me to the PEP8 validator](http://pep8online.com/)
+
+## Bugs
+
+### Solved Bugs
+
+1. Since the board itself was zero indexed it took me a little while to realise that I would have to utilise a `-1` in the code for example on line 38 `int_input-1`
+
+### Remaining Bugs
+
+1. Each word where the global variable is being utilised is underlined in yellow and this is the error it displays, `Redefining name 'board' from outer scope (line 5)`
+
+## Deployment
+
+This project was deployed using Code Institute's mock terminal in Heroku.
+
+* Steps for the deployment
+    * Sign into your account on Heroku
+    * Create a new Heroku app
+    * Add a Config Var with a key of `PORT` and a value of `8000`
+    * Ensure the buildpacks are set to `python` and `NodeJS` in that order
+    * Link the Heroku app to the github repository
+    * Deploy the game
+
+### Credits
+
+1. The Code institute deployment terminal
+2. This is the link to the stack overflow article that helped me with the checking process in my project, specifically the `have_you_won` section, [click the link here](https://stackoverflow.com/questions/49160081/the-functions-for-this-python-tic-tac-toe-game-is-not-working)
