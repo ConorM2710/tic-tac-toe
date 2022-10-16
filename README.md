@@ -5,7 +5,7 @@ Tic Tac Toe is a python terminal game, which runs in the Code Institute mock ter
 The objective of the game is for the user "X" to beat the computer "O", by attempting to score three of 
 their symbols in a row vertically, diagonally or horizontally.
 
-[Here is a link to the live site]()
+[Here is a link to the live site](https://tic-tac-toe-proj.herokuapp.com/)
 
 
 ## How to play the game
@@ -78,3 +78,4 @@ This project was deployed using Code Institute's mock terminal in Heroku.
 
 1. The Code institute deployment terminal
 2. This is the link to the stack overflow article that helped me with the checking process in my project, specifically the `have_you_won` section, [click the link here](https://stackoverflow.com/questions/49160081/the-functions-for-this-python-tic-tac-toe-game-is-not-working)
+3. [Here is another link]() that brings you stackoverlfow in the python game section where I saw common problems people were having
