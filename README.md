@@ -27,9 +27,9 @@ either an `X` or an `O`.
 ### Existing features
 
  * Board generation at the start of each game
-     * A 3x3 grid is generated at the start of each game with `?` filling the 9 spaces
+     - [x] A 3x3 grid is generated at the start of each game with `?` filling the 9 spaces
  * User plays against the computer
-     * The computer generates a random integer from 1-9 each turn after the user
+     - [x] The computer generates a random integer from 1-9 each turn after the user
  * The game accepts the users inputs
  * Input validation
      - [x] Coordinates that are outside the size of the grid will not be accepted and the game must be restarted
@@ -38,3 +38,17 @@ either an `X` or an `O`.
      - [x] The game will announce the winner
      - [x] The game will announce if it is a tie due to all the 9 spaces being filled without a winner
  
+### Future features
+
+* add the option to make it a user vs user game instead of just a user vs computer game
+* Allow the players decide which symbol they would like to be, `X` or `O`
+
+## Data Model
+
+Whilst typing up this README.md before submission, I unfortunately realised that my project was missing a class data model, as I understand that this is stated as part of the pass criteria I will accept the result given by the assessment team.
+
+## Testing
+
+* I have given the console invalid data such as the same number twice or a numbe that is too large
+* I have tested that the game works as expected on the Code Institute heroku terminal and on my local terminal
+* I have been trying to source a valid python online validator as the link to the validator we have been given brings you to a goDaddy domain [Here is the link that should bring me to the PEP8 validator](http://pep8online.com/)

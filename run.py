@@ -1,6 +1,7 @@
 import random
 
 # Global variables
+
 board = [
     "?", "?", "?",
     "?", "?", "?",
@@ -10,20 +11,6 @@ CURRENTUSER = "X"
 WINNER = None
 GAMERUNNING = True
 
-
-# displays the rules of the game to the user
-
-def show_rules(board):
-    """
-    displays to the user how to play the game
-    """
-    print("Welcome to tic tac toe!!!")
-    print("----------------------")
-    print("You will be playing as X against the computer")
-    print("----------------------")
-    print("first player to score 3 in a row")
-    print("diagonally, horizontally or vertically, wins!")
-    print("----------------------")
 
 # displaying the game board to the console
 
@@ -133,7 +120,7 @@ def check_winner():
     """
     global GAMERUNNING
     if check_rows(board) or check_diagonal(board) or check_columns(board):
-        print(f"{WINNER} has won the game!")
+        print(f"The player {WINNER} has won the game!")
         GAMERUNNING = False
 
 
